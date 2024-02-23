@@ -1,0 +1,3 @@
+- Este é o meu primeiro site criado em html feito em aula. (O primeiro de muitos)
+- As noticias aqui usadas foram tiradas de sites aleatorios de noticias.
+- As imagens são tiradas do google e não possuem direitos autorais.

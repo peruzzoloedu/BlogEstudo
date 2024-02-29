@@ -4,27 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> <!-- liga esta pagina ao arquivo style.css -->
     <title>Noticias</title>
 </head>
 
 <body>
-
+    <!-- aba de navegação superior leva para as regiões da pagina principal e para uma aba de perfil ainda não finalizada -->
+    <!-- ela seguia atraves dos id denominados a cada sessão -->
     <nav class="Guia">
         <a href="#Noticias">Noticias</a>
         <a href="#Sobre">Sobre</a>
         <a href="#Contato">Contato</a>
         <a href="Perfil.html">Seu Perfil</a>
     </nav>
-
+    <!-- nome do site feito em h1 para dar destaque -->
     <h1 class="Nomedosite">EstudosNoticias</h1>
-
+    <!-- tag para definir a area das noticias -->
     <section class="Noticias" id="Noticias">
+        <!-- tag para definir cada noticia individualmente -->
         <article>
+            <!-- Titulo feito em h2 para dar destaque  -->
             <h2>O fim dos Animais?</h2>
+            <!-- subtitulo da noticia feito em h3 para dar um destaque menor que o titulo  -->
             <h3>Humanos alteraram tanto a Terra que animais migratórios têm risco de extinção.</h3>
+            <!-- Tag para associar uma imagem presente ou não no codigo a pagina e definir seu tamanho individualmente -->
             <img src="imagem/Tartaruga.jpg" alt="tartaruga" width="200" height="150">
+            <!-- tag para pular/quebrar uma linha -->
             <br>
+            <!-- tag para criar um link/botão que o manda para a noticia completa -->
             <a href="Noticias/NT1.html">Veja Mais</a>
         </article>
 
@@ -61,23 +68,35 @@
         </article>
 
     </section>
+    <!-- sessão para definir a area do Sobre do site -->
+    <section class="Sobre" id="Sobre">
+        <!-- titulo -->
+        <div>
+            <h2>Sobre</h2>
+            <!-- tag para escrever paragrafos -->
+            <p>Ola seja bem-vindo ao EstudosNoticias um site de noticias feito
+                na aula de html do Senac tramandai.
 
-    <section id="Sobre">
-        <h2>Sobre</h2>
-        <p>Ola seja bem-vindo ao EstudosNoticias um site de noticias feito
-            <br> na aula de html do Senac tramandai.
-            <br>
-            este site tem o proposito de exercitar tags do html atraves
-            <br>da imitação de sites de noticias.
-        </p>
+                este site tem o proposito de exercitar tags do html e CSS atraves
+                da imitação de sites de noticias.
+            </p>
+        </div>
     </section>
+    <!-- sessão para definir a area de contato do site -->
+    <section class="Contato" id="Contato">
+        <!-- titulo -->
+        <div>
+            <h2>Contato</h2>
+            <!-- informações de contato -->
+            <p>
 
-    <section id="Contato">
-        <h2>Contato</h2>
-        <p>
-            telefone: 99999999
-            <br>Caixa de email: asfsgfhhyj
-        </p>
+                Criador deste site: Eduardo Peruzzolo
+                <br>
+                telefone: 99999999
+                <br>
+                Caixa de email: teste teste
+            </p>
+        </div>
     </section>
 </body>
 

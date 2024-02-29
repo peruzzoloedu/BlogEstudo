@@ -1,13 +1,17 @@
+/* padronizando a cor de fundo a font e o alinhamento do site. */
 * {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     background-color: rgb(207, 217, 133);
 }
 
+/* definindo a margem do topo da area de navegação. */
 nav {
     margin-top: 50px;
 }
 
+/* padronizando todas as tags a do site, tamanho da fonte, margem, cor, decoração, borda, cor de fundo
+margem interna, alinhamento e curvatura da borda. */
 a {
     font-size: 125%;
     margin: 10px;
@@ -20,16 +24,20 @@ a {
     border-radius: 20px;
 }
 
+/* definindo o tamanho da fonte e a cor do nome do site.  */
 .Nomedosite {
     font-size: 300%;
     text-decoration: underline rgb(24, 116, 25);
 }
 
+/* definindo a borda e a margem das imagems da sessão noticias. */
 .Noticias img {
     border: 3px solid rgb(0, 0, 0);
     margin: 10px;
 }
 
+/* definindo como os blocos devem se comportar dentro do conteiner, tamanho da fonte, se devem ou nao seguir a ordem
+do html, se ira quebrar a linha e o alinhamento dos itens.  */
 .Noticias {
     font-size: 100%;
     display: flex;
@@ -37,14 +45,18 @@ a {
     justify-content: center;
 }
 
+/* definindo a cor de fundo dos titulos na sessão noticias */
 .Noticias h2 {
     background-color: rgb(183, 198, 131);
 }
 
+/* definindo a cor de fundo dos subtitulos na sessão noticias */
 .Noticias h3 {
     background-color: rgb(183, 198, 131);
 }
 
+/* Padronizando os itens dentro da caixa da sessão noticias, borda, cor do fundo, margem interna, 
+largura, altura, margem e curvatura da borda */
 .Noticias article {
     border: 2px rgb(0, 0, 0) solid;
     background-color: rgb(183, 198, 131);
@@ -55,14 +67,89 @@ a {
     border-radius: 20px;
 }
 
-.NTS{
-justify-content: center;
-font-size: 180%;
-width: 100%;
-
+/* defindo o tamanho largura e alinhamento da div NTS */
+.NTS {
+    justify-content: center;
+    font-size: 180%;
+    width: 100%;
 }
 
-.NTS img{
+/* definindo borda e margem das imagens dentro da div NTS */
+.NTS img {
     border: 3px solid rgb(0, 0, 0);
     margin: 10px;
+}
+
+/* definindo um conteiner e suas caracteristicas */
+.Sobre {
+    display: flex;
+    justify-content: center;
+}
+
+/* definindo, largura, altura, borda, margem interna, cor de fundo, curvatura da borda, 
+alinhamento dos itens, centralizando no centro */
+.Sobre div {
+    width: 25%;
+    height: 80%;
+    border: 2px black solid;
+    padding: 10px;
+    background-color: rgb(183, 198, 131);
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* cor de fundo do h2 de contato */
+.Sobre h2 {
+    background-color: rgb(183, 198, 131);
+}
+
+/*cor de fundo do p de sobre*/
+.Sobre p {
+    background-color: rgb(183, 198, 131);
+}
+
+/* definindo um conteiner e suas caracteristicas */
+.Contato {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+/* definindo, largura, altura, borda, margem interna, cor de fundo, 
+curvatura da borda, alinhamento dos itens, centralizando no centro */
+.Contato div {
+    width: 25%;
+    height: 40%;
+    border: 2px black solid;
+    padding: 10px;
+    background-color: rgb(183, 198, 131);
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* cor de fundo do h2 de contato */
+.Contato h2 {
+    background-color: rgb(183, 198, 131);
+}
+
+/*cor de fundo do p de contato*/
+.Contato p {
+    background-color: rgb(183, 198, 131);
+}
+
+/* definindo tamanho da fonte e centralização do texto */
+.Conta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 300%;
+    height: 800px;
+}
+
+/* definindo centralização do texto */
+.Conta p {
+    text-align: center;
+    align-items: center;
 }

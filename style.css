@@ -153,3 +153,17 @@ curvatura da borda, alinhamento dos itens, centralizando no centro */
     text-align: center;
     align-items: center;
 }
+
+/* definindo parametros da movimentação da sessão noticias */
+.hidden {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 2s;
+
+}
+
+.Show {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 2s;
+}

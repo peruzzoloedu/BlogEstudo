@@ -8,22 +8,25 @@ $news2 = new noticia;
 $news3 = new noticia;
 $news4 = new noticia;
 
-$news -> setTitulo('Cão salvo por pouco');
-$news -> setSubtitulo('Cachorra que estava presa há dias em contêiner é resgatada nos EUA por pouco!');
-$news -> setImage('"imagem/Cão.jpg"');
-$news1 -> setTitulo('O fim dos Animais?');
-$news1 -> setSubtitulo('Humanos alteraram tanto a Terra que animais migratórios têm risco de extinção.');
-$news1 -> setImage('"imagem/Tartaruga.jpg" ');
-$news2 -> setTitulo('Pombo espião sera verdade?');
-$news2 -> setSubtitulo('Pombo suspeito de ser espião da China e detido por 8 meses é solto na Índia.');
-$news2 -> setImage('"imagem/Pombo.jpg"');
-$news3 -> setTitulo('Quanto tempo ainda tem?');
-$news3 -> setSubtitulo('Quanto tempo seu cachorro vai viver? Meça seu focinho e descubra ja!!!');
-$news3 -> setImage('"imagem/Dog.jpg"');
-$news4 -> setTitulo('Nunca registrado antes!');
-$news4 -> setSubtitulo('1º avistamento de tubarão-branco recém-nascido é registrado, é incrivel.');
-$news4 -> setImage('"imagem/Tubarão.jfif"');
+$news->setTitulo('Cão salvo por pouco');
+$news->setSubtitulo('Cachorra que estava presa há dias em contêiner é resgatada nos EUA por pouco!');
+$news->setImage('"imagem/Cão.jpg"');
 
+$news1->setTitulo('O fim dos Animais?');
+$news1->setSubtitulo('Humanos alteraram tanto a Terra que animais migratórios têm risco de extinção.');
+$news1->setImage('"imagem/Tartaruga.jpg" ');
+
+$news2->setTitulo('Pombo espião sera verdade?');
+$news2->setSubtitulo('Pombo suspeito de ser espião da China e detido por 8 meses é solto na Índia.');
+$news2->setImage('"imagem/Pombo.jpg"');
+
+$news3->setTitulo('Quanto tempo ainda tem?');
+$news3->setSubtitulo('Quanto tempo seu cachorro vai viver? Meça seu focinho e descubra ja!!!');
+$news3->setImage('"imagem/Dog.jpg"');
+
+$news4->setTitulo('Nunca registrado antes!');
+$news4->setSubtitulo('1º avistamento de tubarão-branco recém-nascido é registrado, é incrivel.');
+$news4->setImage('"imagem/Tubarão.jfif"');
 ?>
 
 
@@ -54,11 +57,11 @@ $news4 -> setImage('"imagem/Tubarão.jfif"');
             <!-- tag para definir cada noticia individualmente -->
             <article>
                 <!-- Titulo feito em h2 para dar destaque  -->
-                <h2><?php echo $news1 -> getTitulo(); ?></h2>
+                <h2><?php echo $news1->getTitulo(); ?></h2>
                 <!-- subtitulo da noticia feito em h3 para dar um destaque menor que o titulo  -->
-                <h3><?php echo $news1 -> getSubtitulo(); ?> </h3>
+                <h3><?php echo $news1->getSubtitulo(); ?> </h3>
                 <!-- Tag para associar uma imagem presente ou não no codigo a pagina e definir seu tamanho individualmente -->
-                <img src=<?php echo $news1 -> getImage(); ?>alt="tartaruga" width="200" height="150">
+                <img src=<?php echo $news1->getImage(); ?>alt="tartaruga" width="200" height="150">
                 <!-- tag para pular/quebrar uma linha -->
                 <br>
                 <!-- tag para criar um link/botão que o manda para a noticia completa -->
@@ -66,33 +69,33 @@ $news4 -> setImage('"imagem/Tubarão.jfif"');
             </article>
 
             <article>
-                <h2><?php echo $news -> getTitulo(); ?></h2>
-                <h3><?php echo $news -> getSubtitulo(); ?> </h3>
-                <img src=<?php echo $news -> getImage(); ?> alt="Cão" width="200" height="150">
+                <h2><?php echo $news->getTitulo(); ?></h2>
+                <h3><?php echo $news->getSubtitulo(); ?> </h3>
+                <img src=<?php echo $news->getImage(); ?> alt="Cão" width="200" height="150">
                 <br>
                 <a href="Noticias/NT2.html">Veja Mais</a>
             </article>
 
             <article>
-                <h2><?php echo $news2 -> getTitulo(); ?></h2>
-                <h3><?php echo $news2 -> getSubtitulo(); ?> </h3>
-                <img src=<?php echo $news2 -> getImage(); ?> alt="Pombo" width="200" height="150">
+                <h2><?php echo $news2->getTitulo(); ?></h2>
+                <h3><?php echo $news2->getSubtitulo(); ?> </h3>
+                <img src=<?php echo $news2->getImage(); ?> alt="Pombo" width="200" height="150">
                 <br>
                 <a href="Noticias/NT3.html">Veja Mais</a>
             </article>
 
             <Article>
-                <h2><?php echo $news3 -> getTitulo(); ?></h2>
-                <h3><?php echo $news3 -> getSubtitulo(); ?></h3>
-                <img src=<?php echo $news3 -> getImage(); ?> alt="Cãozinho" width="200" height="150">
+                <h2><?php echo $news3->getTitulo(); ?></h2>
+                <h3><?php echo $news3->getSubtitulo(); ?></h3>
+                <img src=<?php echo $news3->getImage(); ?> alt="Cãozinho" width="200" height="150">
                 <br>
                 <a href="Noticias/NT4.html">Veja Mais</a>
             </article>
 
             <article>
-                <h2><?php echo $news4 -> getTitulo(); ?></h2>
-                <h3><?php echo $news4 -> getSubtitulo(); ?></h3>
-                <img src=<?php echo $news4 -> getImage(); ?> alt="Tubarão" width="200" height="150">
+                <h2><?php echo $news4->getTitulo(); ?></h2>
+                <h3><?php echo $news4->getSubtitulo(); ?></h3>
+                <img src=<?php echo $news4->getImage(); ?> alt="Tubarão" width="200" height="150">
                 <br>
                 <a href="Noticias/NT5.html">Veja Mais</a>
             </article>

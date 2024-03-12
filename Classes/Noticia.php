@@ -1,12 +1,13 @@
 <?php
 
-class noticia{
+class noticia
+{
 
     private int $idNoticia;
     private String $titulo;
     private String $subtitulo;
     private String $image;
-    private String $created_at; 
+    private String $created_at;
     private String $update_at;
 
     public function getIdNoticia()
@@ -81,4 +82,3 @@ class noticia{
         return $this;
     }
 }
-?>

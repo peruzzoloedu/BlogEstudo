@@ -13,7 +13,7 @@
         <p>Você não possui uma Conta!</p>
     </div>
     <br>
-    <a href="index.html">Voltar</a>
+    <a href="index.php">Voltar</a>
 
 </body>
 

@@ -1,5 +1,4 @@
 <?php
-
 require_once('Classes/Noticia.php');
 
 $news = new noticia;
@@ -29,7 +28,6 @@ $news4->setSubtitulo('1º avistamento de tubarão-branco recém-nascido é regis
 $news4->setImage('"imagem/Tubarão.jfif"');
 ?>
 
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -47,7 +45,8 @@ $news4->setImage('"imagem/Tubarão.jfif"');
         <a href="#Noticias">Noticias</a>
         <a href="#Sobre">Sobre</a>
         <a href="#Contato">Contato</a>
-        <a href="Perfil.html">Seu Perfil</a>
+        <a href="Perfil.php">Seu Perfil</a>
+        <a href="Formulario.php">Formulario</a>
     </nav>
     <!-- nome do site feito em h1 para dar destaque -->
     <h1 class="Nomedosite">EstudosNoticias</h1>
@@ -65,7 +64,7 @@ $news4->setImage('"imagem/Tubarão.jfif"');
                 <!-- tag para pular/quebrar uma linha -->
                 <br>
                 <!-- tag para criar um link/botão que o manda para a noticia completa -->
-                <a href="Noticias/NT1.html">Veja Mais</a>
+                <a href="Noticias/NT1.php">Veja Mais</a>
             </article>
 
             <article>
@@ -73,7 +72,7 @@ $news4->setImage('"imagem/Tubarão.jfif"');
                 <h3><?php echo $news->getSubtitulo(); ?> </h3>
                 <img src=<?php echo $news->getImage(); ?> alt="Cão" width="200" height="150">
                 <br>
-                <a href="Noticias/NT2.html">Veja Mais</a>
+                <a href="Noticias/NT2.php">Veja Mais</a>
             </article>
 
             <article>
@@ -81,7 +80,7 @@ $news4->setImage('"imagem/Tubarão.jfif"');
                 <h3><?php echo $news2->getSubtitulo(); ?> </h3>
                 <img src=<?php echo $news2->getImage(); ?> alt="Pombo" width="200" height="150">
                 <br>
-                <a href="Noticias/NT3.html">Veja Mais</a>
+                <a href="Noticias/NT3.php">Veja Mais</a>
             </article>
 
             <Article>
@@ -89,7 +88,7 @@ $news4->setImage('"imagem/Tubarão.jfif"');
                 <h3><?php echo $news3->getSubtitulo(); ?></h3>
                 <img src=<?php echo $news3->getImage(); ?> alt="Cãozinho" width="200" height="150">
                 <br>
-                <a href="Noticias/NT4.html">Veja Mais</a>
+                <a href="Noticias/NT4.php">Veja Mais</a>
             </article>
 
             <article>
@@ -97,7 +96,7 @@ $news4->setImage('"imagem/Tubarão.jfif"');
                 <h3><?php echo $news4->getSubtitulo(); ?></h3>
                 <img src=<?php echo $news4->getImage(); ?> alt="Tubarão" width="200" height="150">
                 <br>
-                <a href="Noticias/NT5.html">Veja Mais</a>
+                <a href="Noticias/NT5.php">Veja Mais</a>
             </article>
 
         </section>

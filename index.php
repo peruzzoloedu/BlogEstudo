@@ -46,91 +46,111 @@ $news4->setImage('"imagem/Tubarão.jfif"');
         <a href="#Sobre">Sobre</a>
         <a href="#Contato">Contato</a>
         <a href="Perfil.php">Seu Perfil</a>
-        <a href="Formulario.php">Formulario</a>
+        <a href="?page=novo">Nova Noticia</a>
     </nav>
-    <!-- nome do site feito em h1 para dar destaque -->
-    <h1 class="Nomedosite">EstudosNoticias</h1>
-    <!-- tag para definir a area das noticias -->
-    <div class="hidden">
-        <section class="Noticias" id="Noticias">
-            <!-- tag para definir cada noticia individualmente -->
-            <article>
-                <!-- Titulo feito em h2 para dar destaque  -->
-                <h2><?php echo $news1->getTitulo(); ?></h2>
-                <!-- subtitulo da noticia feito em h3 para dar um destaque menor que o titulo  -->
-                <h3><?php echo $news1->getSubtitulo(); ?> </h3>
-                <!-- Tag para associar uma imagem presente ou não no codigo a pagina e definir seu tamanho individualmente -->
-                <img src=<?php echo $news1->getImage(); ?>alt="tartaruga" width="200" height="150">
-                <!-- tag para pular/quebrar uma linha -->
-                <br>
-                <!-- tag para criar um link/botão que o manda para a noticia completa -->
-                <a href="Noticias/NT1.php">Veja Mais</a>
-            </article>
 
-            <article>
-                <h2><?php echo $news->getTitulo(); ?></h2>
-                <h3><?php echo $news->getSubtitulo(); ?> </h3>
-                <img src=<?php echo $news->getImage(); ?> alt="Cão" width="200" height="150">
-                <br>
-                <a href="Noticias/NT2.php">Veja Mais</a>
-            </article>
+    <?php
 
-            <article>
-                <h2><?php echo $news2->getTitulo(); ?></h2>
-                <h3><?php echo $news2->getSubtitulo(); ?> </h3>
-                <img src=<?php echo $news2->getImage(); ?> alt="Pombo" width="200" height="150">
-                <br>
-                <a href="Noticias/NT3.php">Veja Mais</a>
-            </article>
+    include("Novas-Nots/Config.php");
 
-            <Article>
-                <h2><?php echo $news3->getTitulo(); ?></h2>
-                <h3><?php echo $news3->getSubtitulo(); ?></h3>
-                <img src=<?php echo $news3->getImage(); ?> alt="Cãozinho" width="200" height="150">
-                <br>
-                <a href="Noticias/NT4.php">Veja Mais</a>
-            </article>
+    switch (@$_REQUEST['page']) {
 
-            <article>
-                <h2><?php echo $news4->getTitulo(); ?></h2>
-                <h3><?php echo $news4->getSubtitulo(); ?></h3>
-                <img src=<?php echo $news4->getImage(); ?> alt="Tubarão" width="200" height="150">
-                <br>
-                <a href="Noticias/NT5.php">Veja Mais</a>
-            </article>
+        case "novo":
+            include("Novas-Nots/Formulario.php");
+            break;
+        case "listar":
+            include("Listar-Noticia");
+            break;
+        case "Salvar":
+            include("Novas-Nots/Salvar-Noticia.php");
+            break;
+        default:
+    ?>
 
-        </section>
-    </div>
-    <!-- sessão para definir a area do Sobre do site -->
-    <section class="Sobre" id="Sobre">
-        <!-- titulo -->
-        <div>
-            <h2>Sobre</h2>
-            <!-- tag para escrever paragrafos -->
-            <p>Ola seja bem-vindo ao EstudosNoticias um site de noticias feito
-                na aula de html do Senac tramandai.
+            <!-- nome do site feito em h1 para dar destaque -->
+            <h1 class="Nomedosite">EstudosNoticias</h1>
+            <!-- tag para definir a area das noticias -->
+            <div class="hidden">
+                <section class="Noticias" id="Noticias">
+                    <!-- tag para definir cada noticia individualmente -->
+                    <article>
+                        <!-- Titulo feito em h2 para dar destaque  -->
+                        <h2><?php echo $news1->getTitulo(); ?></h2>
+                        <!-- subtitulo da noticia feito em h3 para dar um destaque menor que o titulo  -->
+                        <h3><?php echo $news1->getSubtitulo(); ?> </h3>
+                        <!-- Tag para associar uma imagem presente ou não no codigo a pagina e definir seu tamanho individualmente -->
+                        <img src=<?php echo $news1->getImage(); ?>alt="tartaruga" width="200" height="150">
+                        <!-- tag para pular/quebrar uma linha -->
+                        <br>
+                        <!-- tag para criar um link/botão que o manda para a noticia completa -->
+                        <a href="Noticias/NT1.php">Veja Mais</a>
+                    </article>
 
-                este site tem o proposito de exercitar tags do html e CSS atraves
-                da imitação de sites de noticias.
-            </p>
-        </div>
-    </section>
-    <!-- sessão para definir a area de contato do site -->
-    <section class="Contato" id="Contato">
-        <!-- titulo -->
-        <div>
-            <h2>Contato</h2>
-            <!-- informações de contato -->
-            <p>
+                    <article>
+                        <h2><?php echo $news->getTitulo(); ?></h2>
+                        <h3><?php echo $news->getSubtitulo(); ?> </h3>
+                        <img src=<?php echo $news->getImage(); ?> alt="Cão" width="200" height="150">
+                        <br>
+                        <a href="Noticias/NT2.php">Veja Mais</a>
+                    </article>
 
-                Criador deste site: Eduardo Peruzzolo
-                <br>
-                telefone: 99999999
-                <br>
-                Caixa de email: teste teste
-            </p>
-        </div>
-    </section>
+                    <article>
+                        <h2><?php echo $news2->getTitulo(); ?></h2>
+                        <h3><?php echo $news2->getSubtitulo(); ?> </h3>
+                        <img src=<?php echo $news2->getImage(); ?> alt="Pombo" width="200" height="150">
+                        <br>
+                        <a href="Noticias/NT3.php">Veja Mais</a>
+                    </article>
+
+                    <Article>
+                        <h2><?php echo $news3->getTitulo(); ?></h2>
+                        <h3><?php echo $news3->getSubtitulo(); ?></h3>
+                        <img src=<?php echo $news3->getImage(); ?> alt="Cãozinho" width="200" height="150">
+                        <br>
+                        <a href="Noticias/NT4.php">Veja Mais</a>
+                    </article>
+
+                    <article>
+                        <h2><?php echo $news4->getTitulo(); ?></h2>
+                        <h3><?php echo $news4->getSubtitulo(); ?></h3>
+                        <img src=<?php echo $news4->getImage(); ?> alt="Tubarão" width="200" height="150">
+                        <br>
+                        <a href="Noticias/NT5.php">Veja Mais</a>
+                    </article>
+
+                </section>
+            </div>
+            <!-- sessão para definir a area do Sobre do site -->
+            <section class="Sobre" id="Sobre">
+                <!-- titulo -->
+                <div>
+                    <h2>Sobre</h2>
+                    <!-- tag para escrever paragrafos -->
+                    <p>Ola seja bem-vindo ao EstudosNoticias um site de noticias feito
+                        na aula de html do Senac tramandai.
+
+                        este site tem o proposito de exercitar tags do html e CSS atraves
+                        da imitação de sites de noticias.
+                    </p>
+                </div>
+            </section>
+            <!-- sessão para definir a area de contato do site -->
+            <section class="Contato" id="Contato">
+                <!-- titulo -->
+                <div>
+                    <h2>Contato</h2>
+                    <!-- informações de contato -->
+                    <p>
+
+                        Criador deste site: Eduardo Peruzzolo
+                        <br>
+                        telefone: 99999999
+                        <br>
+                        Caixa de email: teste teste
+                    </p>
+                </div>
+            </section>
+    <?php } ?>
 </body>
 
 <script src="scrypts.js"></script>

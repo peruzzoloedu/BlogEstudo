@@ -2,8 +2,8 @@
 
 class noticia
 {
-
-    private int $idNoticia;
+    private int $id;
+    private String $Noticia;
     private String $titulo;
     private String $subtitulo;
     private String $image;
@@ -12,12 +12,12 @@ class noticia
 
     public function getIdNoticia()
     {
-        return $this->idNoticia;
+        return $this->Noticia;
     }
 
     public function setIdNoticia($idNoticia)
     {
-        $this->idNoticia = $idNoticia;
+        $this->Noticia = $idNoticia;
 
         return $this;
     }
@@ -78,6 +78,18 @@ class noticia
     public function setUpdate_at($update_at)
     {
         $this->update_at = $update_at;
+
+        return $this;
+    }
+
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    public function setId($id)
+    {
+        $this->id = $id;
 
         return $this;
     }

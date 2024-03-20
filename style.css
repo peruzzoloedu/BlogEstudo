@@ -2,7 +2,7 @@
 * {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
-    background-color: rgb(207, 217, 133);
+    background-color: rgb(207, 217, 133) !important;
 }
 
 /* definindo a margem do topo da area de navegação. */
@@ -13,15 +13,15 @@ nav {
 /* padronizando todas as tags a do site, tamanho da fonte, margem, cor, decoração, borda, cor de fundo
 margem interna, alinhamento e curvatura da borda. */
 a {
-    font-size: 125%;
-    margin: 10px;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    border: 2px solid rgb(0, 0, 0);
-    background-color: rgb(183, 198, 131);
-    padding: 10px;
-    align-items: center;
-    border-radius: 20px;
+    font-size: 125% !important;
+    margin: 10px !important;
+    color: rgb(0, 0, 0) !important;
+    text-decoration: none !important;
+    border: 2px solid rgb(0, 0, 0) !important;
+    background-color: rgb(183, 198, 131) !important;
+    padding: 10px !important;
+    align-items: center !important;
+    border-radius: 20px !important;
 }
 
 /* definindo o tamanho da fonte e a cor do nome do site.  */
@@ -212,6 +212,11 @@ curvatura da borda, alinhamento dos itens, centralizando no centro */
     background-color: rgb(183, 198, 131);
     padding: 8px;
 }
+
+.list {
+    margin: 30px;
+}
+
 
 @media (max-width: 568px) {
 

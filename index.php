@@ -35,6 +35,7 @@ $news4->setImage('"imagem/Tubarão.jfif"');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"> <!-- liga esta pagina ao arquivo style.css -->
+
     <title>Noticias</title>
 </head>
 
@@ -46,7 +47,8 @@ $news4->setImage('"imagem/Tubarão.jfif"');
         <a href="#Sobre">Sobre</a>
         <a href="#Contato">Contato</a>
         <a href="Perfil.php">Seu Perfil</a>
-        <a href="?page=novo">Nova Noticia</a>
+        <a href="?page=Novo">Nova Noticia</a>
+        <a href="?page=Listar">Listar Noticia</a>
     </nav>
 
     <?php
@@ -55,14 +57,17 @@ $news4->setImage('"imagem/Tubarão.jfif"');
 
     switch (@$_REQUEST['page']) {
 
-        case "novo":
+        case "Novo":
             include("Novas-Nots/Formulario.php");
             break;
-        case "listar":
-            include("Listar-Noticia");
+        case "Listar":
+            include("Novas-Nots/Listar-Noticia.php");
             break;
         case "Salvar":
             include("Novas-Nots/Salvar-Noticia.php");
+            break;
+        case "Editar":
+            include("Novas-Nots/Editar-Noticia.php");
             break;
         default:
     ?>

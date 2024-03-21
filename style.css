@@ -209,7 +209,7 @@ curvatura da borda, alinhamento dos itens, centralizando no centro */
     margin: 20px;
     border-radius: 20px;
     border: 2px solid black;
-    background-color: rgb(183, 198, 131);
+    background-color: rgb(183, 198, 131) !important;
     padding: 8px;
 }
 

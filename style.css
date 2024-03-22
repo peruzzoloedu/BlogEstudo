@@ -217,6 +217,43 @@ curvatura da borda, alinhamento dos itens, centralizando no centro */
     margin: 30px;
 }
 
+.Formulario2 {
+    font-size: x-large;
+    flex-wrap: nowrap;
+    margin: 50px;
+}
+
+.Formulario2 input {
+    font-size: 80%;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(183, 198, 131);
+    text-align: left;
+
+}
+
+.Formulario2 label {
+    margin: 15px;
+    font-size: 150%;
+}
+
+.Formulario2 a {
+    font-size: 100%;
+}
+
+.Formulario2 .Enviar {
+    font-size: 125%;
+    margin: 20px;
+    border-radius: 20px;
+    border: 2px solid black;
+    background-color: rgb(183, 198, 131) !important;
+    padding: 8px;
+}
+
+
+
+
+
 
 @media (max-width: 568px) {
 

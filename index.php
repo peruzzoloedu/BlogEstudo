@@ -25,7 +25,9 @@ $inf = $conn->query($sql);
         <a href="#Sobre">Sobre</a>
         <a href="#Contato">Contato</a>
         <a href="Perfil.php">Seu Perfil</a>
+        <a href="?page=Autor">Novo Autor</a>
         <a href="?page=Novo">Nova Noticia</a>
+        <a href="?page=ListarA">Listar Autor</a>
         <a href="?page=Listar">Listar Noticia</a>
     </nav>
 
@@ -47,6 +49,18 @@ $inf = $conn->query($sql);
         case "Editar":
             include("Novas-Nots/Editar-Noticia.php");
             break;
+        case "Autor":
+            include("Novos-Autores/Formu.php");
+             break;
+        case "Salvar-Autor":
+            include("Novos-Autores/Salvar-Autor.php");
+            break;
+        case "ListarA":
+            include("Novos-Autores/Listar-Autor.php");
+            break; 
+            case "EditarA":
+                include("Novos-Autores/Editar-Autor.php");
+                break;                
         default:
     ?>
 

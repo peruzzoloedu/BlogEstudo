@@ -25,8 +25,8 @@ if ($qtd > 0) {
     echo "<td>" . $row->titulo . "</td>";
     echo "<td>" . $row->subTitulo . "</td>";
     echo "<td>
-    <button onclick=\"location.href='?page=Editar&id=" . $row->idnoticias . "'; \">Editar</button>
-    <button onclick=\"if(confirm('Você deseja excluir essa noticia?')){location.href='?page=Salvar&Acao=Excluir&id=" . $row->idnoticias . "';}else{false;}\">Deletar</button>
+    <button class='botao' onclick=\"location.href='?page=Editar&id=" . $row->idnoticias . "'; \">Editar</button>
+    <button class='botao'onclick=\"if(confirm('Você deseja excluir essa noticia?')){location.href='?page=Salvar&Acao=Excluir&id=" . $row->idnoticias . "';}else{false;}\">Deletar</button>
     </td>";
     echo "</tr>";
   }

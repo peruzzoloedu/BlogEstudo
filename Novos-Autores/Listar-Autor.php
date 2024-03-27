@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="../style.css">
 
+<!-- estetica -->
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -11,6 +12,8 @@ $res = $conn->query($sql);
 
 $qtd = $res->num_rows;
 
+
+/* criador de lista, ordena as informaçoes para seus campos */
 if ($qtd > 0) {
 
   echo "<table class='table table-hover table-striped table-bordered'>";
@@ -27,9 +30,10 @@ if ($qtd > 0) {
     echo "<td>" . $row->endereco . "</td>";
     echo "<td>" . $row->telefone . "</td>";
     echo "<td>" . $row->email . "</td>";
+    /* botao de editar e excluir */
     echo "<td>
-    <button onclick=\"location.href='?page=EditarA&id=" . $row->idautor . "'; \">Editar</button>
-    <button onclick=\"if(confirm('Você deseja excluir esse autor?')){location.href='?page=Salvar-Autor&Acao=Excluir&id=" . $row->idautor . "';}else{false;}\">Deletar</button>
+    <button class='botao' onclick=\"location.href='?page=EditarA&id=" . $row->idautor . "'; \">Editar</button>
+    <button class='botao' onclick=\"if(confirm('Você deseja excluir esse autor?')){location.href='?page=Salvar-Autor&Acao=Excluir&id=" . $row->idautor . "';}else{false;}\">Deletar</button>
     </td>";
     echo "</tr>";
   }

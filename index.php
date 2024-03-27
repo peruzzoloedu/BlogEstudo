@@ -1,5 +1,9 @@
 <?php
+/* chama o arquivo que nos conecta com o Mysql */
+
 include("Novas-Nots/Config.php");
+
+/* puxa as informaçoes da aba noticias no Mysql */
 
 $sql = "SELECT * FROM noticias";
 $inf = $conn->query($sql);
@@ -33,7 +37,7 @@ $inf = $conn->query($sql);
 
     <?php
 
-
+    /* procura informação na url e age baseado nela */
 
     switch (@$_REQUEST['page']) {
 
@@ -51,16 +55,16 @@ $inf = $conn->query($sql);
             break;
         case "Autor":
             include("Novos-Autores/Formu.php");
-             break;
+            break;
         case "Salvar-Autor":
             include("Novos-Autores/Salvar-Autor.php");
             break;
         case "ListarA":
             include("Novos-Autores/Listar-Autor.php");
-            break; 
-            case "EditarA":
-                include("Novos-Autores/Editar-Autor.php");
-                break;                
+            break;
+        case "EditarA":
+            include("Novos-Autores/Editar-Autor.php");
+            break;
         default:
     ?>
 
@@ -71,11 +75,11 @@ $inf = $conn->query($sql);
                 <section class="Noticias" id="Noticias">
                     <!-- tag para definir cada noticia individualmente -->
                     <?php while ($row = $inf->fetch_object()) {
-
+                        /* transforma as iformaçoes em dados utilizaveis */
                     ?>
                         <article>
                             <!-- Titulo feito em h2 para dar destaque  -->
-                            <h2><?php echo $row->titulo  ?></h2>
+                            <h2><?php echo $row->titulo /* mostra a informaçao obtida na tela */  ?></h2>
                             <!-- subtitulo da noticia feito em h3 para dar um destaque menor que o titulo  -->
                             <h3><?php echo $row->subTitulo ?> </h3>
                             <!-- Tag para associar uma imagem presente ou não no codigo a pagina e definir seu tamanho individualmente -->

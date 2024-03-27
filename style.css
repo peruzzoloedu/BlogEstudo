@@ -250,7 +250,12 @@ curvatura da borda, alinhamento dos itens, centralizando no centro */
     padding: 8px;
 }
 
-
+.botao {
+    margin: 5px;
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: rgb(183, 198, 131) !important;
+}
 
 
 
